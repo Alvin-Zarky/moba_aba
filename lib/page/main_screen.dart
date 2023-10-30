@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:moba_aba/constant/constant.dart';
+import 'package:moba_aba/page/my_profile_screen.dart';
 import 'package:moba_aba/page/profile_screen.dart';
 
 import 'package:moba_aba/widget/home/box_cash.dart';
@@ -62,8 +63,10 @@ class MainScreen extends StatelessWidget {
                       // ),
                       GestureDetector(
                         onTap: () {
+                          // Navigator.of(context).push(MaterialPageRoute(
+                          //     builder: ((context) => const ProfileScreen())));
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: ((context) => const ProfileScreen())));
+                              builder: ((context) => const MyProfileScreen())));
                         },
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(50),
